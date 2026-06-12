@@ -1,0 +1,130 @@
+
+.card {
+  height: 330px;
+  width: 300px;
+  display: flex;
+}
+.parent {
+  height: 100%;
+  width: 100%;
+  background-color: #b2c4d0;
+  border-radius: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 10px;
+}
+.parent .top {
+  justify-content: flex-end;
+  display: flex;
+  margin: 5px;
+}
+
+.hero img {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+}
+.hero h1 {
+  font-size: 23px;
+  font-weight: 400;
+  font-family: monospace;
+}
+.hero p {
+  font-size: 15px;
+  font-weight: 300;
+  font-family: monospace;
+  margin-left: 3px;
+}
+.skill {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin: 5px 0 0 5px;
+}
+.skill h2 {
+  font-size: 10px;
+  font-weight: 300;
+  color: #2d2525;
+  font-weight: 300;
+  font-family: monospace;
+  border: #dfdddd solid 1px;
+  opacity: 0.7;
+  padding: 2px 5px;
+  border-radius: 10px;
+  background-color: #d4d4d4;
+}
+.experience {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 5px;
+  padding: 0 5px;
+  font-size: 13px;
+  font-weight: 300;
+  margin-top: 10px;
+}
+.experience .rating p {
+  color: #000000;
+}
+
+.rating div:first-child {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+.earning {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  border-left: 1px solid rgba(227, 219, 219, 0.5); /* Adds the left line */
+  padding-left: 15px;
+}
+.earning p {
+  color: #000000;
+  font-weight: 300;
+}
+
+.price {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  border-left: 1px solid rgba(227, 219, 219, 0.5); /* Adds the left line */
+  padding-left: 15px;
+}
+.price p {
+  color: #000000;
+  font-weight: 300;
+}
+.bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 5px;
+  padding: 0 25px;
+  gap: 20px;
+}
+.bottom button {
+  padding: 14px;
+  width: 80%;
+  border: 1px solid #ffffff;
+  background-color: #b5e1f4;
+  font-weight: 500;
+  border-radius: 30px;
+  font-family: monospace;
+}
+.bottom button p {
+  color: #000000;
+  font-weight: 600;
+  font-family: monospace;
+}
+.bottom div {
+  height: 45px;
+  width: 45px;
+  background-color: #ffffff;
+  border: #ffffff solid 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}

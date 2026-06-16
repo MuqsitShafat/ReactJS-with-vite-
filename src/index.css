@@ -7,3 +7,10 @@ input , button{
     border-radius : 5px;
     background-color : white;
 }
+ .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }

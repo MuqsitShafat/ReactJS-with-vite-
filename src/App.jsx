@@ -35,17 +35,29 @@ function App() {
 // }
 // export default App;
 
-import FormHandling from "./Components/Card/FormHandling";
-import TwoWayBinding from "./Components/Card/TwoWayBinding";
+// import FormHandling from "./Components/Card/FormHandling";
+// import TwoWayBinding from "./Components/Card/TwoWayBinding";
 
 
-function App() {
+// function App() {
+//   return (
+//     <div className="bg-slate-300 h-screen w-full">
+//       {/* <FormHandling /> */}
+//       <TwoWayBinding  />
+//     </div>
+//   );
+// }
+
+// export default App;
+
+import React from 'react'
+import TodoNotes from './Components/Card/TodoNotes';
+const App = () => {
   return (
-    <div className="bg-slate-300 h-screen w-full">
-      {/* <FormHandling /> */}
-      <TwoWayBinding  />
+    <div>
+      <TodoNotes />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

@@ -52,10 +52,12 @@ function App() {
 
 import React from 'react'
 import TodoNotes from './Components/Card/TodoNotes';
+import LocalStorage from './Components/Card/LocalStorage';
 const App = () => {
   return (
     <div>
-      <TodoNotes />
+      {/* <TodoNotes /> */}
+      <LocalStorage />
     </div>
   )
 }

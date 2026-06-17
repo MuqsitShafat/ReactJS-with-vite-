@@ -25,7 +25,7 @@ const TodoNotes = () => {
       <h1 className="bg-black h-[15%] w-full text-white text-center text-7xl justify-around flex items-center italic ">
         Todo Notes
       </h1>
-      <div className="flex flex-row m-5 gap-5 h-full ">
+      <div className="flex flex-row m-5 gap-5 h-[85%] ">
         {/* Entering Tasks */}
         <div className="flex flex-col mt-1 p-5 bg-amber-300  w-[50%] rounded-lg h-full">
           <input
@@ -59,7 +59,7 @@ const TodoNotes = () => {
                 className="flex flex-col p-5 bg-slate-300 h-48 w-48 rounded-lg"
               >
                 <h1 className="text-2xl text-black italic">{task.title}</h1>
-                <p className="text-sm text-black mt-3 flex-1 min-h-0 overflow-y-auto scrollbar-hide break-words ">
+                <p className="text-sm text-black mt-3 flex-1 min-h-0 overflow-y-auto scrollbar-hide wrap-break-word ">
                   {task.description}
                 </p>
               </div>

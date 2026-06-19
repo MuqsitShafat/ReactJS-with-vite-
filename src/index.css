@@ -1,16 +1,28 @@
 @import "tailwindcss";
-
-input , button{
-    padding : 20px;
-    border : 1px solid black;
-    margin : 10px;
-    border-radius : 5px;
-    background-color : white;
+.default-btn,
+input {
+  padding: 20px;
+  border: 1px solid black;
+  margin: 10px;
+  border-radius: 5px;
+  background-color: white;
 }
- .scrollbar-hide::-webkit-scrollbar {
-    display: none;
-  }
-  .scrollbar-hide {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+/* 1. Keeps your page scrolling naturally with your requested bottom spacing */
+div.h-screen.w-full {
+  height: auto !important;
+  min-height: 100vh;
+  padding-bottom: 10px; /* Adjust this value for more or less bottom spacing */
+}
+
+/* 2. Forces the image wrappers to have an identical, uniform height */
+div.flex-wrap > div.h-\[30\%\] {
+  height: 250px !important; /* Forces all cards to look uniform regardless of image shape */
+}
+

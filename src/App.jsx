@@ -53,11 +53,13 @@ function App() {
 import React from 'react'
 import TodoNotes from './Components/Card/TodoNotes';
 import LocalStorage from './Components/Card/LocalStorage';
+import GalleryAPI from './Components/Card/GalleryAPI';
 const App = () => {
   return (
     <div>
       {/* <TodoNotes /> */}
-      <LocalStorage />
+      {/* <LocalStorage /> */}
+      <GalleryAPI />
     </div>
   )
 }

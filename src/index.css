@@ -25,4 +25,12 @@ div.h-screen.w-full {
 div.flex-wrap > div.h-\[30\%\] {
   height: 250px !important; /* Forces all cards to look uniform regardless of image shape */
 }
-
+h1{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  text-decoration: underline;
+  /* white-space: nowrap;  for making text in same line  */
+}

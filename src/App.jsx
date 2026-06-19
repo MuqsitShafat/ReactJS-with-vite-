@@ -50,16 +50,38 @@ function App() {
 
 // export default App;
 
+// import React from 'react'
+// import TodoNotes from './Components/Card/TodoNotes';
+// import LocalStorage from './Components/Card/LocalStorage';
+// import GalleryAPI from './Components/Card/GalleryAPI';
+// const App = () => {
+//   return (
+//     <div>
+//       {/* <TodoNotes /> */}
+//       {/* <LocalStorage /> */}
+//       <GalleryAPI />
+//     </div>
+//   )
+// }
+
+// export default App
+
+
 import React from 'react'
-import TodoNotes from './Components/Card/TodoNotes';
-import LocalStorage from './Components/Card/LocalStorage';
-import GalleryAPI from './Components/Card/GalleryAPI';
+import {Route,Routes} from 'react-router-dom'
+import Home from './Components/Routing/Pages/Home'
+import About from './Components/Routing/Pages/About'
+import Contact from './Components/Routing/Pages/Contact'
+import Navbar from './Components/Routing/Navbar/Navbar'
 const App = () => {
   return (
     <div>
-      {/* <TodoNotes /> */}
-      {/* <LocalStorage /> */}
-      <GalleryAPI />
+      <Navbar />  
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
     </div>
   )
 }

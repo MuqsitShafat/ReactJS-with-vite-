@@ -32,5 +32,6 @@ h1{
   transform: translate(-50%, -50%);
   font-size: 50px;
   text-decoration: underline;
+  white-space: nowrap;
   /* white-space: nowrap;  for making text in same line  */
 }

@@ -67,21 +67,52 @@ function App() {
 // export default App
 
 
+// import React from 'react'
+// import {Route,Routes} from 'react-router-dom'
+// import Home from './Components/Routing/Pages/Home'
+// import About from './Components/Routing/Pages/About'
+// import Contact from './Components/Routing/Pages/Contact'
+// import Navbar from './Components/Routing/Navbar/Navbar'
+// import Products from './Components/Routing/Pages/Products'
+// import Mens from './Components/Routing/NestedChilds/Mens'
+// import Women from './Components/Routing/NestedChilds/Women'
+// import Courses from './Components/Routing/Pages/Courses'
+// import CoursesDetail from './Components/Routing/Pages/CoursesDetail'
+// import Navbar2 from './Components/Routing/UseNavigate/Navbar2'
+// const App = () => {
+//   return (
+//     <div>
+//       <Navbar />  
+//       <Navbar2 />
+//       <Routes>
+//         <Route path="/" element={<Home />} />
+//         <Route path="/about" element={<About />} />
+//         <Route path = "/products" element = {<Products />}>
+//           <Route path="men" element={<Mens />}/>
+//           <Route path="women" element={<Women />}/>
+//         </Route>
+//         <Route path="Courses" element={<Courses />}/>
+//         <Route path="/Courses/:courseId" element={<CoursesDetail />} />   //Dynamic Routing
+//         <Route path="/contact" element={<Contact />} />
+//         <Route path="*" element={<h1>404 Page Not Found</h1>} />
+//       </Routes>
+//     </div>
+//   )
+// }
+
+// export default App
+
+
+
+
 import React from 'react'
-import {Route,Routes} from 'react-router-dom'
-import Home from './Components/Routing/Pages/Home'
-import About from './Components/Routing/Pages/About'
-import Contact from './Components/Routing/Pages/Contact'
-import Navbar from './Components/Routing/Navbar/Navbar'
+import Child from './Components/PropsChildtoParent/Child';
+import { useState } from 'react';
 const App = () => {
+  const [theme,setTheme] = useState("Dark");
   return (
     <div>
-      <Navbar />  
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
+      <Child theme={theme} setTheme={setTheme}/>
     </div>
   )
 }
